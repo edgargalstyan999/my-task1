@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './index.css';
+const DEFAULT_COLORS = ['red', 'blue', 'yellow', 'black'];
+
 function App() {
-  const [colors, setColors] = useState(['red', 'blue', 'yellow', 'black']);
+  const [colors, setColors] = useState(DEFAULT_COLORS);
 
-  
-
-  let handleClick = () => {
+  const handleClick = () => {
     let last = colors.pop();
     colors.unshift(last);  
     setColors([ ...colors]);
