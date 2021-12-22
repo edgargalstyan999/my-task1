@@ -14,4 +14,8 @@ code {
 .elements{
   width: 100px;
   height: 100px;
+
+}
+.center_component{
+  display: block;
 }

@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       {
-        <div>
+        <div class="clear">
           {colors.map((getcolor) => (
             <div className='elements' style={{ background: getcolor }}></div>
           ))}
